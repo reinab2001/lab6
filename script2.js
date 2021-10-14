@@ -37,6 +37,7 @@ function printArray(){
     //for(var i;i<answers.length;i++){
       // results=results+" "+answers[i];
     //}
+    console.log(answers.toString());
     document.getElementById("answers").innerHTML = answers.toString();
 
 }

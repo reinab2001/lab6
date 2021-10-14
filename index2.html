@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="outer">
-        <h1 od="welcome">Welcome</h1>
+        <h1 id="welcome">Welcome</h1>
         <div class="calculate">
          <label for="">a= </label>
          <input type="number" id="inputA" name="a">
@@ -23,9 +23,10 @@
          <input type="button" id="divide" name="divide" value="divide" onclick="calculate(this)">
          <br><br>
          <label for="">result: </label>
-         <br><br>
-         <input type="button" id="print" value="print array" onclick="printArray()">
+         <br>
          <p id="answer"></p>
+         <input type="button" id="print" value="print array" onclick="printArray()">
+         <p id="answers"></p>
         </div>
     </div>
     <script src="script2.js"></script>

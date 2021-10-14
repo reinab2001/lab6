@@ -1,0 +1,29 @@
+
+ .outer{
+    background-color: brown;
+    height: 480px;
+    
+    padding-top:100px;
+}
+h1{
+    text-align: center;
+}
+ .calculate{
+    background-color: purple;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+@media only screen and (max-width: 768px) {
+    .outer{
+        background-color: red;
+    }
+    .calculate{
+        background-color: greenyellow;
+        width: 50%;
+        height:50%;
+    }
+} 

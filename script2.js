@@ -3,7 +3,7 @@
         if (person != null) {
           document.getElementById("welcome").innerHTML ="Welcome " + person;
         }
-
+        const answers=[]; 
 function calculate(num){
 
         var a = document.getElementById("inputA").value;
@@ -14,17 +14,29 @@ function calculate(num){
     
         if (num.id == "add"){
             result= x+y;
+            answers.push(result);
         } else if(num.id == "subtract"){
             if(x>y){
                 result= x-y;
             } else{
                 result= y-x;
             }
+            answers.push(result);
         } else if(num.id== "multiply"){
             result=x*y;
+            answers.push(result);
         } else if(num.id== "divide"){
             result=x/y;
+            answers.push(result);
         }
         document.getElementById("answer").innerHTML = result;
         
+}
+function printArray(){
+    //var results;
+    //for(var i;i<answers.length;i++){
+      // results=results+" "+answers[i];
+    //}
+    document.getElementById("answers").innerHTML = answers.toString();
+
 }
